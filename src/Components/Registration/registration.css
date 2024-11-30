@@ -1,0 +1,48 @@
+/* RegisterSection Component Styles */
+.register-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  padding: 40px 20px; /* Adjust padding for better alignment */
+  background-color: transparent; /* Ensure fully transparent background */
+  border-radius: 10px; /* Optional: Keep rounded corners if needed */
+  text-align: center;
+  flex: 1; /* Take equal space with Idea Section */
+  min-width: 300px; /* Ensure minimum width */
+}
+
+/* QR Code Styles */
+.qr-code {
+  width: auto; /* Let the image scale based on its original size */
+  max-width: 250px; /* Ensure the QR code doesn't get too large */
+  height: auto;
+  margin-top: 70px; /* Reduced space above the QR code */
+}
+
+/* Register Button Styles */
+.register-btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  background-color: #0056b3; /* Button background */
+  color: #ffffff; /* Button text color */
+  margin-top: 15px; /* Reduce margin above the button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.register-btn:hover {
+  background-color: #030960; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.register-btn:active {
+  background-color: #e6a700; /* Darker gold when clicked */
+  transform: scale(0.95); /* Slightly shrink for feedback */
+}

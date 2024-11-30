@@ -1,0 +1,116 @@
+/* IdeaSection Component Styles */
+.idea-section {
+  display: flex;
+  flex-direction: column; /* Stack image and paragraphs vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  min-height: 600px; /* Adjust as needed */
+  padding: 20px;
+  background-color: transparent;
+}
+
+/* Style for the image */
+.idea-section-image {
+  width: 100%; /* Ensure the image takes up full width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 80%; /* Default max-width for larger screens */
+  margin-bottom: 20px; /* Add space below the image */
+  border-radius: 8px; /* Optional: Rounded corners */
+  max-height: 400px; /* Limit the maximum height for better mobile display */
+  object-fit: contain; /* Ensure the image fits inside its container */
+}
+
+/* Styles for the paragraph tags */
+#padhaai-bhi {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2rem;
+  color: #000000; /* Adjust color */
+  margin: 5px 0; /* Add space between paragraphs */
+}
+
+.idea-section h2 {
+  font-size: 3rem;
+  color: #030960;
+  margin-left: -10px;
+  margin-bottom: 40px;
+  margin-top: 20px; /* Space above the heading */
+  font-weight: bold;
+  text-transform: uppercase; /* Capitalize all letters for emphasis */
+  letter-spacing: 4px; /* Add spacing between letters */
+  text-align: center; /* Center text for better responsiveness */
+  white-space: normal; /* Allow wrapping */
+  word-wrap: break-word; /* Ensure it wraps */
+  width: auto; /* Remove fixed width */
+}
+
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .idea-section {
+    padding: 15px; /* Adjust padding for smaller screens */
+    min-height: 500px; /* Reduce the min-height */
+  }
+
+  .idea-section-image {
+    max-width: 90%; /* Increase the image width on smaller screens */
+    max-height: 350px; /* Limit the height of the image */
+  }
+
+  #padhaai-bhi {
+    font-size: 1.5rem; /* Reduce font size for paragraphs */
+  }
+
+  .idea-section h2 {
+    font-size: 2.5rem; /* Reduce heading size */
+    margin-bottom: 15px; /* Add space below the heading */
+    padding: 0 10px; /* Add some padding to avoid text touching edges */
+    word-wrap: break-word; /* Allow the text to wrap properly */
+  }
+}
+
+/* Media Query for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .idea-section {
+    min-height: 400px; /* Further reduce the min-height */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .idea-section-image {
+    max-width: 100%; /* Make the image width 100% on very small screens */
+    max-height: 250px; /* Optionally limit the image height for mobile */
+  }
+
+  #padhaai-bhi {
+    font-size: 1.2rem; /* Further reduce font size for mobile */
+  }
+
+  .idea-section h2 {
+    font-size: 2rem; /* Further reduce heading size */
+    margin-bottom: 15px; /* Adjust bottom margin */
+    padding: 0 10px; /* Padding for smaller screens */
+  }
+}
+
+/* Additional improvements for very small screens (extra small mobile devices) */
+@media (max-width: 320px) {
+  .idea-section {
+    min-height: 350px; /* Reduce the min-height for very small screens */
+    padding: 8px; /* Further reduce padding */
+  }
+
+  .idea-section-image {
+    max-height: 200px; /* Limit image height further for very small screens */
+  }
+
+  #padhaai-bhi {
+    font-size: 1rem; /* Further reduce font size for very small screens */
+  }
+
+  .idea-section h2 {
+    font-size: 1.8rem; /* Further reduce heading size for very small screens */
+    margin-bottom: 15px; /* Adjust bottom margin */
+  }
+}
